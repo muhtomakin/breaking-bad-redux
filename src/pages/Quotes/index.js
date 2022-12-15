@@ -15,7 +15,7 @@ function Quotes() {
         if(status === 'idle') {
             dispatch(fetchAllQuotes());
         }
-    }, [dispatch]);
+    }, [dispatch, status]);
 
     if(status === 'loading') {
         return <Loading />
