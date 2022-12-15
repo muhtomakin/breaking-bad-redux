@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 
 import Home from './pages/Home';
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/char/:char_id" element={<Detail />} />
-        <Route path="/quotes" element={<Quotes />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/char/:char_id" element={<Detail />} />
+        {/* <Route path="/quotes" element={<Quotes />} />
         <Route path="/quotes/:quotes_id" element={<QuoteDetail />} /> */}
       </Routes>
     </div>
