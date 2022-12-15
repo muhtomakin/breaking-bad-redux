@@ -12,7 +12,9 @@ function Quotes() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchAllQuotes());
+        if(status === 'idle') {
+            dispatch(fetchAllQuotes());
+        }
     }, [dispatch]);
 
     if(status === 'loading') {
