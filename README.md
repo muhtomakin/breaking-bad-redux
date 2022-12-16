@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To fetch the data you can check the 
+https://www.breakingbadapi.com/api website. Can create .env file and put the endpoint there.
 
 ## Available Scripts
 
